@@ -6,20 +6,19 @@
     <p> <%= dose.description %> </p>
     <% end %>
 
-
-    <button type="button" class="btn btn-warning"><%= link_to "Delete #{@cocktail.name}",cocktail_path(@cocktail), method: :delete,
-    data: { confirm: "Are you sure you want to delete this wonderfull cocktail forever?" } %></button>
-
-
-
     <%= simple_form_for ([@cocktail, @dose]) do |f| %>
     <%= f.input :description %>
     <%= f.input :ingredient, collection: Ingredient.all %>
     <%= f.submit %>
     <% end %>
-
-  </div>  
-
-    <%= link_to "return to Cocktail list", cocktails_path %>
-
+    <ul>
+      </div id ="delete">  
+        <div class = "container">
+        <button type="button" class="btn btn-warning"><%= link_to "return to Cocktail list", cocktails_path %></button>       
+    
+        <div id = "delete">
+        <button type="button" class="btn btn-dark"><%= link_to "Delete #{@cocktail.name}",cocktail_path(@cocktail), method: :delete,
+            data: { confirm: "Are you sure you want to delete this wonderfull cocktail forever?" } %></button>
+      </div>
+    </ul>
 </div>
