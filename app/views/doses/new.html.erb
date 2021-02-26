@@ -1,5 +1,8 @@
+<div id = "bgc">
+
 <%= simple_form_for ([@cocktail, @dose]) do |f| %>
   <%= f.input :description %>
   <%= f.input :ingredient, collection: Ingredient.all %>
   <%= f.submit %>
 <% end %>
+</div id >
