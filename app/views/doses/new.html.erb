@@ -1,8 +1,18 @@
 <div id = "bgc">
+  <div class ="container">
+  
+    <div class="flash flash-success alert alert-dismissible fade show" role="alert">
+      <span><strong>Great!</strong> 🎉 you successfully add a Name to your cocktail! Now you can add a dose and some ingredients</span>
+      <a data-dismiss="alert" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </a>
+    </div>
 
-<%= simple_form_for ([@cocktail, @dose]) do |f| %>
-  <%= f.input :description %>
-  <%= f.input :ingredient, collection: Ingredient.all %>
-  <%= f.submit %>
-<% end %>
-</div id >
+    <%= simple_form_for ([@cocktail, @dose]) do |f| %>
+      <%= f.input :description %>
+      <%= f.input :ingredient, collection: Ingredient.all %>
+      <%= f.submit %>
+    <% end %>
+
+  </div>
+</div >
