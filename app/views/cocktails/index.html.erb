@@ -7,18 +7,34 @@
   </div>
 </div>
 
-</div>
-<%= link_to "Add a cocktail", "cocktails/new" %>
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-6">
-      <ul>
-        <% @cocktails.each do |cocktail|  %>
-        <div class = "card_category">
-          <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-        </div>
-        <% end %>
-      </ul>
+
+<div class="cards mt-2 p-2">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_qmP1d8zFVjJD0c2x3JukbhHiDihiMaeAFA&usqp=CAU
+    )">ADD A COCKTAIL
     </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+    Lunch
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+    Dinner
   </div>
 </div>
+
+
+<div class="container">
+
+
+     <div>
+      <% @cocktails.each do |cocktail|  %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      <%= cocktail.name %>
+      </div>
+    </div>
+ </div>
+      <% end %>
+  </div>
+</div>
+</div>
+          <%# <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li> %>
