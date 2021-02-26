@@ -11,7 +11,7 @@
     font-weight: bold;
     text-shadow: 1px 1px 3px #F7D63B;
     border-radius: 5px;
-    box-shadow: 0 0 5px#F7D63B;
+    box-shadow: 0 0 5px black;
   }
   
   .cards {
@@ -54,4 +54,8 @@
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+#bgc {
+  background-color: #F7D63B;
 }

@@ -1,40 +1,23 @@
+<div id = "bgc">
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://preview.redd.it/lptgn2014su41.jpg?auto=webp&s=039bfed589763b2e27729f5a8503759ca16a57e7);">
-  <div class="container">
-    <h1>Welcome to <strong>My Tavern</strong></h1>
-    <p>Moliere :“L'alcool est l'aspirine de l'âme”</p>
-    <a class="btn btn-warning" href="cocktails/new">ADD A COCKTAIL</a>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://preview.redd.it/lptgn2014su41.jpg?auto=webp&s=039bfed589763b2e27729f5a8503759ca16a57e7);">
+    <div class="container">
+      <h1>Welcome to My Tavern</h1>
+      <p>Moliere :“L'alcool est l'aspirine de l'âme”</p>
+    </div>
   </div>
-</div>
 
-
-<div class="cards mt-2 p-2">
+  <div class="cards mt-2 p-2">
     <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_qmP1d8zFVjJD0c2x3JukbhHiDihiMaeAFA&usqp=CAU
-    )">ADD A COCKTAIL
+    )">
+      <%= link_to "ADD A COCKTAIL", "cocktails/new" %>
     </div>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-    Lunch
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-    Dinner
-  </div>
-</div>
-
-
-<div class="container">
-
-
-     <div>
-      <% @cocktails.each do |cocktail|  %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      <%= cocktail.name %>
+    <% @cocktails.each do |cocktail|  %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://source.unsplash.com/featured/?<%= cocktail.name %>);">
+        <%= link_to cocktail.name, cocktail_path(cocktail) %>
       </div>
-    </div>
- </div>
-      <% end %>
+    <% end %>
+
   </div>
 </div>
-</div>
-          <%# <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li> %>
