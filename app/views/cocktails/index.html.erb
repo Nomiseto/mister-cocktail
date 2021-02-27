@@ -1,20 +1,19 @@
 <div id = "bgc">
 
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://preview.redd.it/lptgn2014su41.jpg?auto=webp&s=039bfed589763b2e27729f5a8503759ca16a57e7);">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://vinepair.com/wp-content/uploads/2018/05/fave-tiki-social.jpg);">
     <div class="container">
-      <h1>Welcome to My Tavern</h1>
-      <p>Moliere :“L'alcool est l'aspirine de l'âme”</p>
+      <h1>Welcome to TIKI BAR</h1>
+      <p>Yeppaaaaaaa</p>
     </div>
   </div>
 
   <div class="cards mt-2 p-2">
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_qmP1d8zFVjJD0c2x3JukbhHiDihiMaeAFA&usqp=CAU
-    )">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url(https://img.themirahotel.com/wp-content/uploads/2019/06/TMHK_Vibes_New-Tiki-Cocktails-2019_web.jpg)">
       <%= link_to "ADD A COCKTAIL", "cocktails/new" %>
     </div>
 
     <% @cocktails.each do |cocktail|  %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://source.unsplash.com/featured/?<%= cocktail.name %>);">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url(https://source.unsplash.com/featured/?<%= cocktail.name %>);">
         <div><%= link_to cocktail.name, cocktail_path(cocktail) %></div>
       </div>
     <% end %>

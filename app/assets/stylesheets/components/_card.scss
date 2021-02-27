@@ -9,9 +9,8 @@
     color: white;
     font-size: 24px;
     font-weight: bold;
-    text-shadow: 1px 1px 3px #F7D63B;
     border-radius: 5px;
-    box-shadow: 0 0 5px black;
+    box-shadow: 2px 2px 4px rgb(65, 62, 62);
   }
   
   .cards {
@@ -57,18 +56,18 @@
 }
 
 #bgc {
-  background-color: #F7D63B;
+  background-color: black;
   min-height: 100vh;
 }
 
 .cards a {
   text-decoration: none;
-  color: #F7D63B;
+  color: white;
 }
 
 a:hover {
   text-decoration: none;
-  color: black;
+  color: darkgrey;
 }
 .flash {
   padding: 16px 24px;
