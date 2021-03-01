@@ -1,16 +1,21 @@
 #delete {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+
+  text-decoration: none;
+  color: white;
 }
 
-.a {
+.btn a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
   
-  .a:hover {
-    text-decoration: none;
-    color:darkgrey;
-  }
+.btn a:hover {
+  text-decoration: none;
+  color:darkgrey;
+}
   
+// .container{
+//   display: flex;
+//   justify-content: center;
+
+// }
